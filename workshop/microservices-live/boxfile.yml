@@ -1,0 +1,22 @@
+run.config:
+  engine: nodejs
+  fs_watch: true
+  extra_packages:
+    - nginx
+  extra_steps:
+    - npm update
+    - npm install -g moleculer-cli
+    - npm install moleculer-repl --save
+    - npm install
+# Just to allow the connexion between
+data.rethinkdb:
+  image: nanobox/rethinkdb:2.3
+data.redis:
+  image: nanobox/redis:3.0
+# Our server for the api
+web.api:
+  start:
+    nginx: nginx -c /app/config/nginx.conf
+    node: npm start
+  writable_dirs:
+    - "."
