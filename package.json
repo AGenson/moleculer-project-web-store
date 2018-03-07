@@ -1,12 +1,9 @@
 {
-  "name": "breatheup-services",
-  "version": "1.0.0",
-  "description": "services and apis",
+  "name": "moleculer-project-web-store",
+  "version": "1.2.0",
+  "description": "An simple Rest-API for simulating a web store",
   "scripts": {
-    "start": "node index.js",
-    "ci": "jest --watch",
-    "test": "jest --coverage",
-    "lint": "eslint services"
+    "start": "node index.js"
   },
   "keywords": [
     "microservices",
@@ -18,35 +15,15 @@
     "Anthony Morgado",
     "Alexia Ferric"
   ],
-  "devDependencies": {
-    "eslint": "4.5.0",
-    "jest": "20.0.4",
-    "jest-cli": "20.0.4"
-  },
   "dependencies": {
-    "auth0": "^2.8.0",
-    "aws-sdk": "^2.133.0",
-    "axios": "^0.16.2",
-    "dotenv-safe": "^4.0.4",
-    "faker": "^4.1.0",
-    "ioredis": "3.1.2",
-    "lodash": "^4.17.4",
     "lowdb": "^1.0.0",
     "moleculer": "^0.11.5",
     "moleculer-repl": "^0.3.1",
     "moleculer-web": "^0.5.2",
     "path": "^0.12.7",
-    "ramda": "^0.25.0",
-    "thinky": "^2.3.9"
+    "uuid": "^3.2.1"
   },
   "engines": {
     "node": ">= 6.x.x"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "rootDir": "./services",
-    "roots": [
-      "../test"
-    ]
   }
 }
