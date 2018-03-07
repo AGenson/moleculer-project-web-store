@@ -60,7 +60,7 @@ Get all users that exist
 | :---------: | :------: | ----------- |
 | -           | -        | -           |
 
-### GET /api/v1/user/[:email](https://github.com/AGenson/moleculer-project-web-store/wiki#get-apiv1useremail)
+### GET /api/v1/user/[:email](https://github.com/AGenson/moleculer-project-web-store#get-apiv1useremail)
 
 Get a specific user from his email address
 
@@ -68,7 +68,7 @@ Get a specific user from his email address
 | :---------: | :------: | ----------------------------- |
 | `email`     | `String` | The email address of the user |
 
-### GET /api/v1/user/[:email](https://github.com/AGenson/moleculer-project-web-store/wiki#get-apiv1useremailverify)/verify
+### GET /api/v1/user/[:email](https://github.com/AGenson/moleculer-project-web-store#get-apiv1useremailverify)/verify
 
 Verify if a user exists from his email address
 
@@ -76,7 +76,7 @@ Verify if a user exists from his email address
 | :---------: | :------: | ----------------------------- |
 | `email`     | `String` | The email address of the user |
 
-### PATCH /api/v1/user/[:email](https://github.com/AGenson/moleculer-project-web-store/wiki#patch-apiv1useremail)
+### PATCH /api/v1/user/[:email](https://github.com/AGenson/moleculer-project-web-store#patch-apiv1useremail)
 
 Update a user information from his email address
 
@@ -108,7 +108,7 @@ Get all products that exist
 | :---------: | :------: | ----------- |
 | -           | -        | -           |
 
-### GET /api/v1/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store/wiki#get-apiv1productid_product)
+### GET /api/v1/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store#get-apiv1productid_product)
 
 Get a specific product from its id
 
@@ -116,7 +116,7 @@ Get a specific product from its id
 | :----------: | :------: | --------------------- |
 | `product_id` | `String` | The id of the product |
 
-### GET /api/v1/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store/wiki#get-apiv1productid_productverify)/verify
+### GET /api/v1/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store#get-apiv1productid_productverify)/verify
 
 Verify that a product exists from its id
 
@@ -124,7 +124,7 @@ Verify that a product exists from its id
 | :----------: | :------: | ----------------------- |
 | `product_id` | `String` | The id of the product |
 
-### PATCH /api/v1/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store/wiki#patch-apiv1productid_product)
+### PATCH /api/v1/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store#patch-apiv1productid_product)
 
 Update a product information from its id
 
@@ -135,7 +135,7 @@ Update a product information from its id
 | `description` | `String` | The description of the product |
 | `price`       | `Number` | The price of the product       |
 
-### PATCH /api/v1/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store/wiki#patch-apiv1productid_productquantity_opquantity)/quantity_op/[:quantity](https://github.com/AGenson/moleculer-project-web-store/wiki#patch-apiv1productid_productquantity_opquantity)
+### PATCH /api/v1/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store#patch-apiv1productid_productquantity_opquantity)/quantity_op/[:quantity](https://github.com/AGenson/moleculer-project-web-store#patch-apiv1productid_productquantity_opquantity)
 
 Add or remove quantity of a product from its id
 
@@ -144,7 +144,7 @@ Add or remove quantity of a product from its id
 | `product_id` | `String` | The id of the product                                                |
 | `quantity`   | `String` | The quantity you want to add (positive nbr) or remove (negative nbr) |
 
-### PATCH /api/v1/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store/wiki#patch-apiv1productid_productincrement)/increment
+### PATCH /api/v1/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store#patch-apiv1productid_productincrement)/increment
 
 Increment a product's quantity from its id
 
@@ -152,7 +152,7 @@ Increment a product's quantity from its id
 | :----------: | :------: | -------------------------------------------------------------------- |
 | `product_id` | `String` | The id of the product                                                |
 
-### PATCH /api/v1/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store/wiki#patch-apiv1productid_productdecrement)/decrement
+### PATCH /api/v1/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store#patch-apiv1productid_productdecrement)/decrement
 
 Decrement a product's quantity from its id
 
@@ -180,7 +180,7 @@ Get all orders that exist
 | :---------: | :------: | ----------- |
 | -           | -        | -           |
 
-### GET /api/v1/order/[:id_order](https://github.com/AGenson/moleculer-project-web-store/wiki#get-apiv1orderid_order)
+### GET /api/v1/order/[:id_order](https://github.com/AGenson/moleculer-project-web-store#get-apiv1orderid_order)
 
 Get a specific order from its id
 
@@ -188,7 +188,7 @@ Get a specific order from its id
 | :--------: | :------: | ------------------- |
 | `id_order` | `String` | The id of the order |
 
-### GET /api/v1/order/user/[:id_user](https://github.com/AGenson/moleculer-project-web-store/wiki#get-apiv1orderuserid_user)
+### GET /api/v1/order/user/[:id_user](https://github.com/AGenson/moleculer-project-web-store#get-apiv1orderuserid_user)
 
 Get all orders linked to a specific user from his id
 
@@ -196,7 +196,7 @@ Get all orders linked to a specific user from his id
 | :-------: | :------: | ------------------ |
 | `id_user` | `String` | The id of the user |
 
-### GET /api/v1/order/[:id_order](https://github.com/AGenson/moleculer-project-web-store/wiki#get-apiv1orderid_orderverify)/verify
+### GET /api/v1/order/[:id_order](https://github.com/AGenson/moleculer-project-web-store#get-apiv1orderid_orderverify)/verify
 
 Verify that an order exists from its id
 
@@ -204,7 +204,7 @@ Verify that an order exists from its id
 | :--------: | :------: | ------------------- |
 | `id_order` | `String` | The id of the order |
 
-### PATCH /api/v1/order/[:id_order](https://github.com/AGenson/moleculer-project-web-store/wiki#patch-apiv1orderid_orderproductid_product)/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store/wiki#patch-apiv1orderid_orderproductid_product)
+### PATCH /api/v1/order/[:id_order](https://github.com/AGenson/moleculer-project-web-store#patch-apiv1orderid_orderproductid_product)/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store#patch-apiv1orderid_orderproductid_product)
 
 Add a product to an order
 
@@ -213,7 +213,7 @@ Add a product to an order
 | `id_order`   | `String` | The id of the order   |
 | `id_product` | `String` | The id of the product |
 
-### PATCH /api/v1/order/[:id_order](https://github.com/AGenson/moleculer-project-web-store/wiki#patch-apiv1orderid_orderproductid_productincrement)/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store/wiki#patch-apiv1orderid_orderproductid_productincrement)/increment
+### PATCH /api/v1/order/[:id_order](https://github.com/AGenson/moleculer-project-web-store#patch-apiv1orderid_orderproductid_productincrement)/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store#patch-apiv1orderid_orderproductid_productincrement)/increment
 
 Increment a product's quantity in an order
 
@@ -222,7 +222,7 @@ Increment a product's quantity in an order
 | `id_order`   | `String` | The id of the order   |
 | `id_product` | `String` | The id of the product |
 
-### PATCH /api/v1/order/[:id_order](https://github.com/AGenson/moleculer-project-web-store/wiki#patch-apiv1orderid_orderproductid_productdecrement)/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store/wiki#patch-apiv1orderid_orderproductid_productdecrement)/decrement
+### PATCH /api/v1/order/[:id_order](https://github.com/AGenson/moleculer-project-web-store#patch-apiv1orderid_orderproductid_productdecrement)/product/[:id_product](https://github.com/AGenson/moleculer-project-web-store#patch-apiv1orderid_orderproductid_productdecrement)/decrement
 
 Decrement a product's quantity in an order. Remove the product from the order if it's quantity equal 0
 
@@ -230,7 +230,7 @@ Decrement a product's quantity in an order. Remove the product from the order if
 | :----------: | :------: | --------------------- |
 | `id_order`   | `String` | The id of the order   |
 
-### PATCH /api/v1/order/[:id_order](https://github.com/AGenson/moleculer-project-web-store/wiki#patch-apiv1orderid_order)
+### PATCH /api/v1/order/[:id_order](https://github.com/AGenson/moleculer-project-web-store#patch-apiv1orderid_order)
 
 Validate an order. The order will be locked and cannot be changed after validation
 
