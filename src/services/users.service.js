@@ -4,6 +4,8 @@ const Database = require("../adapters/Database");
 const Models = require("../models");
 const { MoleculerError } = require("moleculer").Errors;
 
+
+
 module.exports = {
 	name: "users",
 
@@ -17,15 +19,15 @@ module.exports = {
 
 		/**
 		@	Descr : Create a new object User
-		@	Params: email, lastName, firstName
+		@	Params: email, lastname, firstname
 		@	Commnt: An unique id (id_user) will be created, but email must be unique too
 		@	Return: User object created    /    MoleculerError
 		*/
 		create: {
 			params: {
 				email: "string",
-				lastName: "string",
-				firstName: "string",
+				lastname: "string",
+				firstname: "string"
 			},
 			handler(ctx) {
 				return ctx.call("users.verify_email", { email: ctx.params.email })
@@ -95,16 +97,16 @@ module.exports = {
 
 		/**
 		@	Descr : Change the information about the given user in the corresponding User object
-		@	Params: email, lastName, firstName
-		@	Commnt: - Only the lastName and the firstName can be change with this function
+		@	Params: email, lastname, firstname
+		@	Commnt: - Only the lastname and the firstname can be change with this function
 		@			- email cannot be changed
 		@	Return: email    /    MoleculerError
 		*/
 		edit: {
 			params: {
 				email: "string",
-				firstName: "string",
-				lastName: "string"
+				firstname: "string",
+				lastname: "string"
 			},
 			handler(ctx) {
 				return ctx.call("users.verify_email", { email: ctx.params.email })
@@ -114,8 +116,8 @@ module.exports = {
 									.then((db_user) => {
 										//
 										var user = new Models.User(db_user).create();
-										user.firstName = ctx.params.firstName || db_user.firstName;
-										user.lastName = ctx.params.lastName || db_user.lastName;
+										user.firstname = ctx.params.firstname || db_user.firstname;
+										user.lastname = ctx.params.lastname || db_user.lastname;
 										//
 										return this.database_edit(ctx.params.email, user);
 									})

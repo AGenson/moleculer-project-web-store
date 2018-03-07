@@ -1,0 +1,4 @@
+node_modules/
+.vscode/
+moleculer-project-web-store.wiki/
+build/
